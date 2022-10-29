@@ -3,7 +3,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## ABOUT THE PROJECT
-The goal of the project is to understand and build a End-To-End MLOps lifecycle from  model building, monitoring, configurations, testing, packaging, deployment to cicd, etc.
+The goal of the project is to understand and build a End-To-End MLOps lifecycle from  model building, monitoring, configurations, testing, packaging, deployment to CI/CD, etc.
 
 ![pl](images/frame1.jpg)
 
@@ -13,41 +13,28 @@ The goal of the project is to understand and build a End-To-End MLOps lifecycle 
 
 ## Part 1: Deep Learning Project
 
-Refer to the [Blog Post here](https://www.ravirajag.dev/blog/mlops-project-setup-part1)
-
-The project that've implemented is a simple deep learning model 
-
-- `How to get the data?`
-- `How to process the data?`
-- `How to define dataloaders?`
-- `How to declare the model?`
-- `How to train the model?`
-- `How to do the inference?`
-
-![pl](images/pl.jpeg)
-
+The project that've implemented is a simple deep learning model which predicts whether a given sentence is gramatically correct or not.
+  - Input data : 'glue'
+  - model : 'google/bert_uncased_L-2_H-128_A-2'
+  - output format : 'Probabilities [correct, incorrect]'
+  - framework : 'Pytorch-Lightning', 'Huggingface Datasets' , 'Huggingfacemodels'
+  
 Following tech stack is used:
 
 - [Huggingface Datasets](https://github.com/huggingface/datasets)
 - [Huggingface Transformers](https://github.com/huggingface/transformers)
 - [Pytorch Lightning](https://pytorch-lightning.readthedocs.io/)
 
-## Week 1: Model monitoring - Weights and Biases
+## Part 2: Model monitoring - Weights and Biases
 
-<img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=difficulty&message=easy&color=green"/>
+Weight and Biases alone can be used to do many different Mlops tasks like model monitoring, hyperparameter tracking, model and data versioning etc.
+But I've used only for tracking model training.
 
-Refer to the [Blog Post here](https://www.ravirajag.dev/blog/mlops-wandb-integration)
-
-Tracking all the experiments like tweaking hyper-parameters, trying different models to test their performance and seeing the connection between model and the input data will help in developing a better model.
-
-The scope of this week is to understand the following topics:
-
-- `How to configure basic logging with W&B?`
-- `How to compute metrics and log them in W&B?`
-- `How to add plots in W&B?`
-- `How to add data samples to W&B?`
-
-![wannb](images/wandb.png)
+  - plotted model training
+  - confusion matrix
+  - a table displaying incorrectly classified datapoints
+  
+![wannb](images/wandB.png)
 
 Following tech stack is used:
 
